@@ -6,25 +6,58 @@
     display: block;
 }
 
+body{
+    background-color: rgb(218, 226, 223);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(51, 55, 69);
+}
+
 header{
     text-align: center;
 }
 
-.tab-content{
-    padding: 12px;
-    padding-left: 25%;
+
+
+.tab-content h1{
+    text-align: center;
 }
 
-.splitter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tab-content p{
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 
 .menu{
+    display: flex;
+    justify-content: center;
     list-style-type: none;
+    cursor: pointer;
+    padding: 0%;
+    
 }
 
-.menu:hover{
-    cursor:pointer;
+.menu li{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+}
+.menu li:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    color: rgb(218, 226, 223);
+    background-color: rgb(51, 55, 69);
+}
+
+.aboutme-body{
+    display: flex;
+    padding-left: 20px;
+}
+
+.aboutme-body img{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 300px;
 }
