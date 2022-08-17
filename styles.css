@@ -1,0 +1,30 @@
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+header{
+    text-align: center;
+}
+
+.tab-content{
+    padding: 12px;
+    padding-left: 25%;
+}
+
+.splitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu:hover{
+    cursor:pointer;
+}
