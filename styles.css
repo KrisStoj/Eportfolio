@@ -6,17 +6,34 @@
     display: block;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: rgb(218, 226, 223);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:rgb(51, 55, 69);
+    position: absolute;
+    margin-top: 0;
+    top: 0px;
 }
 
 header{
     text-align: center;
+    background-color: #805e73;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 0;
 }
 
-
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .tab-content h1{
     text-align: center;
@@ -60,4 +77,29 @@ header{
     border: 1px solid black;
     border-radius: 100%;
     width: 300px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color:rgb(218, 226, 223);
+    border: 3px solid rgb(218, 226, 223);
+    border-radius: 30px;
+    background-color: rgb(51, 55, 69);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.links a:hover{
+    background-color: rgb(218, 226, 223);
+    color:rgb(51, 55, 69);
+    border: 3px solid rgb(51, 55, 69);
 }
