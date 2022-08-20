@@ -16,42 +16,30 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:rgb(51, 55, 69);
     position: absolute;
-    margin-top: 0;
+    margin: 0;
     top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
-header{
+body header{
     text-align: center;
     background-color: #805e73;
-    margin: 0px;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: 0;
-}
-
-header ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.tab-content h1{
-    text-align: center;
-}
-
-.tab-content p{
-    padding-left: 50px;
-    padding-right: 50px;
-
+    height: 100%;
+    width: 900px;
 }
 
 .menu{
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    cursor: pointer;
     padding: 0%;
-    
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    gap: 20px;
 }
 
 .menu li{
@@ -59,8 +47,12 @@ header ul{
     border: 1px solid black;
     border-radius: 10px;
     margin: 2px;
-    padding: 5px;
+    padding-right: 9px;
+    padding-left: 9px;
+    list-style-type: none;
+    cursor: pointer;
 }
+
 .menu li:hover{
     border: 1px solid black;
     border-radius: 10px;
@@ -68,26 +60,35 @@ header ul{
     background-color: rgb(51, 55, 69);
 }
 
-.aboutme-body{
+.tab-content{
+    height: 100%;
+    text-align: center;
+}
+
+.tab-style{
     display: flex;
-    padding-left: 20px;
+    flex-direction: column;
+    height: 100%;
 }
 
-.aboutme-body img{
-    border: 1px solid black;
-    border-radius: 100%;
-    width: 300px;
+.tab-content .about-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.links{
+.link-resume{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 150px;
 }
 
-.links a{
+.link-resume a{
     text-decoration: none;
     color:rgb(218, 226, 223);
     border: 3px solid rgb(218, 226, 223);
@@ -98,7 +99,7 @@ header ul{
     text-align: center;
 }
 
-.links a:hover{
+.link-resume a:hover{
     background-color: rgb(218, 226, 223);
     color:rgb(51, 55, 69);
     border: 3px solid rgb(51, 55, 69);
