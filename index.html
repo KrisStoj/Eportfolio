@@ -1,116 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="styles.css">
-	<script src="script.js" defer></script>
-</head>
-<body>
-	<header>
-		<h1>Kristian</h1>
-		<h1>Stojcevski</h1>
-		<ul class="menu">
-			<li data-tab-target="#teamwork" class="tab">Teamwork</li>
-			<li data-tab-target="#leadership" class="tab">Leadership</li>
-			<li data-tab-target="#research" class="tab">Research</li>
-			<li data-tab-target="#about" class="active-tab">About Me</li>
-			<li data-tab-target="#professional" class="tab">Professional Experience</li>
-			<li data-tab-target="#academic" class="tab">Academic Experience</li>
-			<li data-tab-target="#links" class="tab">Resume & Links</li>
-		</ul>
-	</header>
-	<div class="splitter">
-		<div class="tab-content">
-			<div id="teamwork" data-tab-content>
-				<h1 class="h1-style">Teamwork</h1>
-				<p class="p-style">
-					Within my time working at S+P, I have almost worked for most of the time within a team setting,
-					communicating not only with external clients, but internally as well with colleagues in order to produce an effective design.
-					Some major projects that I have been fortunate enough to take part in include Ed Square residential designs,
-					a multi-stage development containing over 300 townhomes, in which we have successfully worked on their 1-4 stages,
-					allowing us to design their hydraulic systems.
-					I was also assigned to assist in the design of a 40 storey building located in the centre of Sydney CBD,
-					adjacent (and slightly hovering over) to central station, which I believe is a result of my hard work and developing skills.
-				</p>
-			</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Kristian - About Me</title>
+    <script src="/script.js" defer></script>
 
-			<div id="leadership" data-tab-content>
-				<h1 class="h1-style">Leadership</h1>
-				<p class="p-style">
-					As a previous employee had decided to part ways with the company, 
-					I was given the opportunity to guide the drafting team as their team leader. 
-					I took this role as a temporary to give management more time to decide on their next steps. 
-					Management had offered me the role to supervise the drafters because of my own managerial skills. 
-					Since the beginning of 2022, I have been actively planning, supervising and teaching the team on a day to day basis, 
-					acting as their main point of contact for any issues, problems and/or help. 
-				</p>
-			</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () =>{
+        VANTA.GLOBE({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          size: 1.10,
+          color: 0xffffff,
+          backgroundColor: 0x2c0087
+        })
+      })
+    </script>
+  </head>
 
-			<div id="research" data-tab-content>
-				<h1 class="h1-style">Research</h1>
-				<p class="p-style">
-					As I am currently in my 5th year at university,
-					I am currently in the process of researching and planning my capstone project in order to complete my degree.
-					Although currently I am in the early stages of researching relevant articles and compiling a report together,
-					the research is focused on the XXXXXXXXX
-				</p>
-			</div>
+  <body>
+    <div id="vanta"></div>
+    <header>
+      <h1>Kristian Stojcevski</h1>
+      <img src="./images/self-photo.jpg">
+    </header>
+    <main>
+      <div class="links">
+        <a href="https://github.com/KrisStoj">GitHub</a>
+        <a href="https://www.linkedin.com/in/kristian-stojcevski-23a9b6220/">LinkedIn</a>
+        <a>Projects</a>
+      </div>
 
-			<div id="about" data-tab-content class="active">
-				<h1 class="h1-style">About Me</h1>
-				<div class="about-style">
-					<img src="sources/Kristian Stojcevski.jpg">
-					<p class="p-style">
-						50% Student, 50% Professional, 100% Engineer. A phrase created to illustrate not only the professional side of engineers,
-						but also their adaptability in new understanding new concepts & skills.
-						I strongly believe this phrase perfectly summarises professional engineers in all disciplines.
-						This also links to my current position in a literal sense, of being a full-time student, and full-time engineer.
-						<br><br><br>As an individual, I love to be challenge with tasks that require critical thinking,
-						that leads to a satisfying outcome and overall can be reflected on for future endeavours.
-						Currently, I believe I have learnt a lot as an engineer, but only being 2 years within my current career,
-						I know there is still a long way to go before I become a professional engineer.				
-					</p>
-			
-				</div>
-			</div>
-
-			<div id="professional" data-tab-content>
-				<h1 class="h1-style">Professional Experience</h1>
-				<p class="p-style">
-					Sparks + Partners Consulting Engineers
-					Beginning the journey as a junior draftsperson, I learnt the basics of CAD, specifically 2D modelling.
-					As I progressed time-wise, I began to understand what exactly I was doing, being hydraulic designing.
-					With more experience on 2D modelling and beginning to learn how to 3D model, I was able to do basic design work,
-					utilising engineering principles and following Australian standards.
-					A milestone in my early career, being promoted to a junior hydraulic engineer. With this change came more responsibilities.
-					I had already advanced my knowledge as a 2D & 3D modeller,
-					becoming one of the individuals other employees would come to in seek of assistance.
-					I began to design work in conjunction with modelling, and would later get it reviewed by a team leader for quality assurance.
-				</p>
-			</div>
-
-			<div id="academic" data-tab-content>
-				<h1 class="h1-style">Academic Experience</h1>
-				<p class="p-style">
-					UTS - Bachelor of Engineering (Hons.) Diploma in Professional Engineering Practice - WAM: XX
-					Within my final year (5th year student) of completing my Mechanical Engineering degree at University of Technology Sydney,
-					I have accomplished a lot of theoretical and practical subjects individually and within teams. 
-
-				</p>
-			</div>
-
-			<div id="links" data-tab-content>
-				<h1 class="h1-style">Resume & Links</h1>
-				<div class="link-resume">
-					<a href="" download>Resume (PDF Download)</a>
-					<a target="_blank" href="https://www.linkedin.com/in/kristian-stojcevski">LinkedIn</a>
-					<a target="_blank" href="https://github.com/KrisStoj">GitHub</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+      <div class="base">
+        <h2>About Me</h2>
+        <hr>
+        <div class="combined">
+          <div class="info">
+            <h4>Education:</h4>
+            <ul>
+              <li>Bachelor of Engineering (Honours) Majoring in Mechanical Engineering</li>
+              <li>Diploma in Professional Engineering Practice</li>
+            </ul>
+            <h4>Employment:</h4>
+            <ul>
+              <li>Draftsperson - 2D & 3D modelling</li>
+              <li>Junior Hydraulic Engineer - Engineering hydraulic systems for industrial and residential buildings</li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h4>Programming Languages:</h4>
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+            <h4>CAD Softwares:</h4>
+            <ul>
+              <li>AutoCAD</li>
+              <li>Revit</li>
+              <li>SolidWorks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
