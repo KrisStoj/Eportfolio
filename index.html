@@ -36,10 +36,21 @@
       <img src="./images/self-photo.jpg">
     </header>
     <main>
-      <div class="links">
-        <a href="https://github.com/KrisStoj">GitHub</a>
-        <a href="https://www.linkedin.com/in/kristian-stojcevski-23a9b6220/">LinkedIn</a>
-        <a>Projects</a>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'AboutMe')" id="defaultOpen">About Me</button>
+        <button class="tablinks" onclick="openCity(event, 'Employment')">Employment</button>
+        <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+      </div>
+    
+      <!-- Tabs -->
+      <div id="AboutMe" class="tabcontent">
+        <h3>About Me</h3>
+      </div>
+      <div id="Employment" class="tabcontent">
+        <h3>Employment</h3>  
+      </div>
+      <div id="Education" class="tabcontent">
+        <h3>Education</h3>
       </div>
 
       <div class="base">

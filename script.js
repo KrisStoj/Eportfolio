@@ -1,7 +1,16 @@
-function githubLink(){
-    open("https://github.com/KrisStoj")
-}
+function openCity(evt, cityName){
+    var i, tabcontent, tablinks;
 
-function linkedinLink(){
-    open("https://www.linkedin.com/in/kristian-stojcevski-23a9b6220/")
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for(i=0; i < tabcontent.length; i++){
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for(i=0; i < tablinks.length; i++){
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
