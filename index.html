@@ -9,10 +9,10 @@
     <script src="/script.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
       window.addEventListener('DOMContentLoaded', () =>{
-        VANTA.GLOBE({
+        VANTA.WAVES({
           el: "#vanta",
           mouseControls: true,
           touchControls: true,
@@ -21,9 +21,11 @@
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          size: 1.10,
-          color: 0xffffff,
-          backgroundColor: 0x2c0087
+          color: 0x23153c,
+          shininess: 70.00,
+          waveHeight: 28.00,
+          waveSpeed: 0.25,
+          zoom: 0.76
         })
       })
     </script>
@@ -33,55 +35,57 @@
     <div id="vanta"></div>
     <header>
       <h1>Kristian Stojcevski</h1>
-      <img src="./images/self-photo.jpg">
+      <ul class="tabs">
+        <li data-tab-target="#aboutme" class="active tab">About Me</li>
+        <li data-tab-target="#professional" class="tab">Professional Experience</li>
+        <li data-tab-target="#academic" class="tab">Academix Experience</li>
+        <li data-tab-target="#research" class="tab">Research</li>
+        <li data-tab-target="#leadership" class="tab">Leadership</li>
+        <li data-tab-target="#teamwork" class="tab">Teamwork</li>
+        <li data-tab-target="#links" class="tab">Resume & Link</li>
+      </ul>
+      <hr>
     </header>
     <main>
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'AboutMe')" id="defaultOpen">About Me</button>
-        <button class="tablinks" onclick="openCity(event, 'Employment')">Employment</button>
-        <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
-      </div>
-    
       <!-- Tabs -->
-      <div id="AboutMe" class="tabcontent">
-        <h3>About Me</h3>
-      </div>
-      <div id="Employment" class="tabcontent">
-        <h3>Employment</h3>  
-      </div>
-      <div id="Education" class="tabcontent">
-        <h3>Education</h3>
-      </div>
-
-      <div class="base">
-        <h2>About Me</h2>
-        <hr>
-        <div class="combined">
-          <div class="info">
-            <h4>Education:</h4>
-            <ul>
-              <li>Bachelor of Engineering (Honours) Majoring in Mechanical Engineering</li>
-              <li>Diploma in Professional Engineering Practice</li>
-            </ul>
-            <h4>Employment:</h4>
-            <ul>
-              <li>Draftsperson - 2D & 3D modelling</li>
-              <li>Junior Hydraulic Engineer - Engineering hydraulic systems for industrial and residential buildings</li>
-            </ul>
+      <div class="tab-content">
+        <div id="aboutme" data-tab-content class="active">
+          <div class="base">
+            <h2>About Me</h2>
+            <hr>
+            <p>
+              sd
+            </p>
           </div>
-          <div class="skills">
-            <h4>Programming Languages:</h4>
-            <ul>
-              <li>Java</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-            <h4>CAD Softwares:</h4>
-            <ul>
-              <li>AutoCAD</li>
-              <li>Revit</li>
-              <li>SolidWorks</li>
-            </ul>
+        </div>
+        <div id="professional" data-tab-content>
+          <div class="base">
+            <h2>Professional Experience</h2>
+          </div>
+        </div>
+        <div id="academic" data-tab-content>
+          <div class="base">
+            <h2>Academic Experience</h2>
+          </div>
+        </div>
+        <div id="research" data-tab-content>
+          <div class="base">
+            <h2>Research</h2>
+          </div>
+        </div>
+        <div id="leadership" data-tab-content>
+          <div class="base">
+            <h2>Leadership</h2>
+          </div>
+        </div>
+        <div id="teamwork" data-tab-content>
+          <div class="base">
+            <h2>Teamwork</h2>
+          </div>
+        </div>
+        <div id="links" data-tab-content>
+          <div class="base">
+            <h2>Resume & Links</h2>
           </div>
         </div>
       </div>

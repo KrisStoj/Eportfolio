@@ -1,3 +1,12 @@
+[data-tab-content]{
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
 #vanta{
     z-index: 0;
     position: absolute;
@@ -9,23 +18,22 @@
 
 body{
     font-family: sans-serif;
-    color:rgb(170, 219, 30);
+    color: white;
     overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header{
-    margin-top: 40px;
+    padding-top: 10px;
     position: relative;
     text-align: center;
+    background-color: rgb(0, 0, 0, 80%);
 }
 
-header img{
-    margin-top: -10px;
-    width: 120px;
-    height: 120px;
-    border: 2px solid rgb(170, 219, 30);
-    border-radius: 100%;
-    margin-bottom: 25px;
+header h1{
+    font-size:40px;
 }
 
 main{
@@ -40,78 +48,42 @@ main{
     background-color: rgb(0, 0, 0, 80%);
     padding: 30px;
     margin-top: 20px;
+    margin: 0%;
     border-radius: 35px;
-    width: 80%;
-    max-width: 1000px
+    width: 1000px;
+    padding-left: 20px;
 }
 
 .base h2{
     margin-top: 0;
 }
 
-.combined{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-
-.info{
-    width: 65%;
-}
-
-.info h2{
-    margin-top: 0;
-}
-
-.info ul li{
-    list-style-type: circle;
-}
-
-.skills{
-    width: 35%;
-}
-
-.skills ul li{
-    list-style-type:square;
-}
-
-.tab{
+.tabs{
     overflow: hidden;
     display: flex;
     justify-content: center;
     gap: 20px;
+    list-style-type: none;
+    width: 100%;
 }
 
-.tab button{
-    padding: 15px;
-    border: 3px solid rgb(170, 219, 30);
-    border-radius: 30px;
-    background-color: rgb(0, 0, 0, 70%);
-    text-decoration: none;
-    color: rgb(170, 219, 30);
+.tab{
     cursor: pointer;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(103, 134, 19);
+    color:darkslateblue;
+    font-weight:bold;
 }
 
-.tab button:hover{
-    color: black;
-    background-color:rgb(170, 219, 30, 70%);
-    border-color: black;
+.tab.active{
+    background-color: rgb(170, 219, 30);
+}
+
+.tab:hover{
     transition: 0.5s;
-}
-
-.tab button:active{
-    color: black;
-    background-color:rgb(170, 219, 30, 70%);
-    border-color: black;
-}
-
-.tabcontent{
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    animation: fadeEffect 1s;
+    background-color:rgb(145, 188, 26);
 }
 
 @keyframes fadeEffect{
