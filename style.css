@@ -16,6 +16,10 @@
     height: 100%;
 }
 
+*{
+    font-size: large;
+}
+
 body{
     font-family: sans-serif;
     color: white;
@@ -51,15 +55,29 @@ main{
     background-color: rgb(0, 0, 0, 80%);
     padding: 30px;
     margin-top: 40px;
-    height: inherit;
+    height: 75vh;
     margin-bottom: 40px;
     border-radius: 35px;
     width: 90vw;
     padding-left: 20px;
 }
 
+.base-links{
+    background-color: rgb(0, 0, 0, 80%);
+    padding: 30px;
+    margin-top: 40px;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 60px;
+    width: 30vw;
+    padding-left: 20px;
+    text-align: center;
+}
+
 .base h2{
     margin-top: 0;
+    text-align: center;
+    font-size: 40px;
 }
 
 .tabs{
@@ -81,6 +99,7 @@ main{
     background-color: rgb(188, 19, 254, 30%);
     color:white;
     font-weight:bold;
+    transition: 0.5s;
 }
 
 .tab:hover{
@@ -89,6 +108,7 @@ main{
 }
 
 .tab.active{
+    transition: 0.5s;
     background-color: rgb(188, 19, 254, 65%);
 }
 
@@ -102,33 +122,118 @@ to {opacity: 1;}
     height: 30vh;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.about-me{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: x-large;
+}
+
+.about-me p{
+    margin-right: 100px;
 }
 
 .img-text{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 40px;
+    font-size: large;
+    height: 90%;
+}
+
+.img-text p{
+    margin-right: 100px;
+    margin-left: 50px;
+    font-size:large;
+}
+
+.img-text img{
+    margin-left: 100px;
+}
+
+.img-text-vert{
+    text-align: center;
+    font-size: x-large;
+}
+
+.img-text-vert p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.img-text-vert img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.prof-img{
+    width: 25%;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 0;
+    border-radius: 60px;
+}
+
+.leadership-img{
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 60px;
+}
+
+.uts-img{
+    height: 30vh;
+    border-radius: 10px;
+    margin-right: 100px;
+    padding: 0px;
+}
+
+.teamwork-img{
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 60px;
 }
 
 .links-resume{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.links-resume ul{
     margin-top: 50px;
     padding: 0;
-}
-
-.links-resume li{
-    padding: 20px;
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .links-resume a{
-    color: white;
+    font-size: large;
+    font-weight: 1000;
+    padding: 20px;
     text-decoration: none;
-    font-size: 25px;
+    list-style-type: none;
+    background-color: rgb(197, 197, 197);
+    color: black;
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 300px;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.links-resume a:hover{
+    background-color: rgb(0, 0, 0, 80%);
+    color: white;
+    transition: 0.5s;
+}
+
+.academic-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
